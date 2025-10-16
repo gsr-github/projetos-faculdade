@@ -69,6 +69,7 @@ Previsão de chuva recebida → irrigação bloqueada.
 
 ## 🧩 Componentes Utilizados
 
+<img width="1437" height="798" alt="fase-2-campo-inovacao-cap1-mapa-tesouro" src="https://github.com/user-attachments/assets/c066363c-4326-4f3a-8b1f-ba02c5ce1b4e" />
 
 | Componente | Função | Pino ESP32 |
 |-------------|--------|-------------|

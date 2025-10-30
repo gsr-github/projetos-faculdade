@@ -1,58 +1,80 @@
-# FIAP - Faculdade de Informática e Administração Paulista
+# 🎓 FIAP – Faculdade de Informática e Administração Paulista  
 
-# Nome do projeto
+## 💡 Nome do Projeto  
+- **Curso de Inteligência Artificial – Turma IA 2/2025  **  
 
-## Nome do grupo
+---
 
-## 👨‍🎓 Integrantes: 
-- <a>Gustavo</a>
+## 👥 Nome do Grupo  
+**IA 2/2025**  
 
-## 👩‍🏫 Professores:
-### Tutor(a) 
-- <a >Ana Cristana</a>
-### Coordenador(a)
-- <a>André</a>
+---
 
+## 👨‍🎓 Integrantes  
+- **Gustavo**  
 
-## 📜 Descrição
+---
 
-Projetos desenvolvidos ao longo do curso de IA.
+## 👩‍🏫 Professores  
 
+### Tutor(a)  
+- **Ana Cristana**  
 
-## 📁 Estrutura de pastas
+### Coordenador(a)  
+- **André**  
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+---
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
+## 📘 Descrição  
 
-- <b>assets</b>: Aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+Este repositório contém os materiais, códigos e documentos desenvolvidos ao longo das atividades do curso de **Inteligência Artificial (IA)** da **FIAP**.  
 
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
+O projeto visa aplicar os conceitos aprendidos em sala de aula para criar **soluções práticas e inovadoras**, unindo **pensamento computacional**, **estatística**, **análise de dados** e **desenvolvimento de software**.  
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+As entregas refletem a integração entre teoria e prática, envolvendo desde scripts e aplicações até relatórios técnicos e análises exploratórias de dados.  
 
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
+---
 
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+## 📁 Estrutura de Pastas  
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+A organização do repositório segue o padrão institucional da FIAP, com a seguinte estrutura:  
 
-## 🔧 Como executar o código
+- **`.github/`** → Contém arquivos de configuração e automação do GitHub (actions, workflows e templates).  
+- **`assets/`** → Armazena recursos visuais, como imagens, ícones, banners e vídeos de apoio.  
+- **`config/`** → Contém arquivos de configuração, variáveis de ambiente e parâmetros gerais de execução.  
+- **`document/`** → Reúne relatórios, planilhas e demais documentos institucionais.  
+  - **`other/`** → Materiais complementares e documentos auxiliares.  
+- **`scripts/`** → Scripts adicionais usados para automações, deploy, migrações de banco ou backup.  
+- **`src/`** → Diretório principal de código-fonte, contendo os módulos e soluções desenvolvidas ao longo das fases do projeto.  
+- **`README.md`** → Este arquivo — guia principal do repositório, com informações gerais e instruções de uso.  
 
-## Dependências
+---
 
-- Python (recomendado): versão 3.10 ou superior — https://www.python.org/downloads/
-- Visual Studio Code: https://code.visualstudio.com/download
-- R (se for usar scripts em R): https://cran.r-project.org/bin/windows/base/
+## 🔧 Como Executar o Código  
 
+Para garantir a execução correta dos arquivos, recomenda-se instalar as seguintes dependências:  
 
-## 🗃 Histórico de lançamentos
+### 🐍 **Python**  
+- Versão recomendada: **3.10 ou superior**  
+- Download: [https://www.python.org/downloads/](https://www.python.org/downloads/)  
 
-- <b>Será utilizado as tags para controle de versão.</b>: 
+### 💻 **Visual Studio Code (VS Code)**  
+- Editor recomendado para desenvolvimento e execução do código.  
+- Download: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)  
 
+### 📊 **R (opcional)**  
+- Utilizado para scripts estatísticos e análises de dados.  
+- Download: [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)  
 
-## 📜 Licença
+---
 
-Código educacional de uso livre. Adapte conforme sua necessidade acadêmica ou pessoal.
+## 🗃 Histórico de Lançamentos  
 
+O controle de versões será feito através de **tags do Git**, garantindo rastreabilidade e organização nas entregas.  
+
+---
+
+## 📜 Licença  
+
+Este projeto é de **uso educacional e livre**, podendo ser adaptado conforme as necessidades acadêmicas ou pessoais dos autores.  
 

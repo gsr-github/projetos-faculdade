@@ -1,7 +1,7 @@
 # 🎓 FIAP – Faculdade de Informática e Administração Paulista  
 
 ## 💡 Nome do Projeto  
-- **Curso de Inteligência Artificial – Turma IA 2/2025  **  
+Curso de Inteligência Artificial – Turma IA 2/2025 
 
 ---
 

@@ -3,7 +3,7 @@
 ---
 
 **Nome do Grupo:** IA 2/2025  
-**Nomes dos integrantes do grupo:** Gustavo
+**Integrantes:** Gustavo
 
 ## Introdução
 

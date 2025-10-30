@@ -1,7 +1,7 @@
 # 🌾 Análise Exploratória de Dados Agropecuários (R)
 
 **Grupo:** IA 2/2025  
-**Integrante:** Gustavo  
+**Integrantes:** Gustavo  
 
 ---
 

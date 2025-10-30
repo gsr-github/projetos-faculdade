@@ -87,7 +87,7 @@ Previsão de chuva recebida → irrigação bloqueada.
 
 ## 🧩 Componentes Utilizados
 <p align="center">
-  <img src="./assets/fase-2-campo-inovacao-cap1-mapa-tesouro.png" alt="Mapa do Tesouro - Fase 2" width="80%">
+  <img src="../../../assets/fase-2-campo-inovacao-cap1-mapa-tesouro.png" alt="Mapa do Tesouro - Fase 2" width="80%">
 </p>
 
 

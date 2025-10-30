@@ -1,10 +1,22 @@
-# Gestão Financeira Rural — CLI (Python)
-
-Um aplicativo de terminal simples para **registrar receitas e despesas rurais**, salvar os dados em **JSON** e gerar um **relatório em tabela (TXT)** com totais por mês e por categoria de gasto.
-
-> Projeto focado em estruturas e algoritmos **sem classes**, usando **funções** com **passagem de parâmetros**, e **estruturas de dados nativas** (lista, tupla, dicionário, tabela de memória).
+# Gestão Financeira Rural —  (Python)
 
 ---
+
+**Nome do Grupo:** IA 2/2025  
+**Nomes dos integrantes do grupo:** Gustavo
+
+## Introdução
+
+Este repositório contém uma aplicação em Python para gestão financeira rural. O objetivo é registrar receitas e despesas, armazenar os dados em JSON e gerar relatórios em texto que facilitem a análise mensal e por categoria. O projeto serve tanto como ferramenta prática quanto como exercício didático sobre estruturas de dados e validação de entradas.
+
+## Visão Geral do Projeto
+
+### Objetivos
+- Fornecer uma ferramenta simples para registro e análise de fluxos financeiros rurais (receitas e despesas).
+- Gerar relatórios mensais e por categoria para apoiar decisões de manejo financeiro.
+
+### Metodologia
+- Implementação funcional em Python com validação de entradas, persistência em JSON e geração de relatórios em TXT; testes manuais via menu interativo.
 
 ## ✨ Funcionalidades
 
@@ -39,19 +51,6 @@ Um aplicativo de terminal simples para **registrar receitas e despesas rurais**,
 
 - **Python 3.10+** (por causa do `match/case`).
 - **Sem dependências externas** (apenas biblioteca padrão: `json`, `datetime`, `collections`).
-
-### Instalação opcional (Windows/Linux/macOS)
-
-```bash
-# (Opcional) criar e ativar um ambiente virtual
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# Linux/macOS
-source .venv/bin/activate
-
-# Não há pacotes a instalar — uso direto
-```
 
 ---
 

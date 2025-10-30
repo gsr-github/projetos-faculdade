@@ -1,11 +1,29 @@
 # 🌱 Projeto: Sistema de Irrigação Inteligente — Fase 2
 ### Curso: Campo Inovação | FarmTech Solutions
+**Nome do Grupo:** IA 2/2025  
+**Integrantes:** Gustavo 
+
 **Microcontrolador:** ESP32  
 **Simulação:** [Wokwi.com](https://wokwi.com)  
 **Framework:** Arduino (PlatformIO)  
 
 ---
+## 🧭 Introdução
 
+Este projeto apresenta um protótipo de sistema de irrigação inteligente que combina leituras de sensores com regras de decisão para controlar uma bomba de água. O objetivo é demonstrar, em ambiente simulado (Wokwi) e com código para ESP32, como sinais ambientais e inputs de usuário podem ser integrados para automatizar decisões de manejo agrícola.
+
+## 🔍 Visão Geral do Projeto
+
+### Objetivos
+- Automatizar a irrigação considerando umidade do solo, simulação de nutrientes (NPK), pH simulado e previsão de chuva via comando serial.
+- Fornecer exemplo didático de integração hardware-software para aplicações de IoT agrícola.
+
+### Metodologia
+- Projeto e simulação do circuito no Wokwi.
+- Implementação do firmware em C++ (PlatformIO/Arduino) para ESP32.
+- Testes funcionais via Serial Monitor e simulações controladas.
+
+---
 ## 🎯 Objetivo do Projeto
 
 Desenvolver um **sistema de irrigação automatizado e inteligente**, capaz de:
@@ -69,7 +87,7 @@ Previsão de chuva recebida → irrigação bloqueada.
 
 ## 🧩 Componentes Utilizados
 
-<img width="1437" height="798" alt="fase-2-campo-inovacao-cap1-mapa-tesouro" src="https://github.com/user-attachments/assets/c066363c-4326-4f3a-8b1f-ba02c5ce1b4e" />
+<img width="1437" height="798" alt="fase-2-campo-inovacao-cap1-mapa-tesouro" src="https://github.com/user-attachments/assets/fase-2-campo-inovacao-cap1-mapa-tesouro.png" />
 
 | Componente | Função | Pino ESP32 |
 |-------------|--------|-------------|
@@ -154,3 +172,6 @@ Instalação automática via PlatformIO (`platformio.ini` já configurado).
 
 ---
 
+## 📜 Licença
+
+Código educacional de uso livre. Adapte conforme sua necessidade acadêmica ou pessoal.

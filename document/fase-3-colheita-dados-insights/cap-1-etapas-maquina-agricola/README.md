@@ -1,199 +1,245 @@
-# 🌱 Projeto: Etapas de uma Máquina Agrícolae — Fase 3
+# 🌱 Projeto: Etapas de uma Máquina Agrícola — Fase 3
 
 **Nome do Grupo:** IA 2/2025  
-**Integrantes:** 
-- Gustavo Redoan
-- Jorge Macedo
-- Lucca Benigno
+**Integrantes:**  
+- Gustavo Redoan  
+- Jorge Macedo  
+- Lucca Benigno  
 
 ---
-## Sumário
 
-1. [Introdução](#introducao)
-2. [Objetivo](#objetivo)
-3. [Estrutura do Projeto](#projeto)
-4. [Passo a Passo – Importação no Oracle](#importacao)
-5. [Consultas SQL](#consultas)
-6. [Resultados](#resultados)
-7. [Conclusão](#conclusao)
-8. [Licença](#licenca)
+## 📘 Sumário
 
----
-## <a name="introducao"></a>1. Introdução
-
-Esta atividade tem como objetivo importar e analisar, no Oracle SQL Developer, os dados coletados pelos sensores do sistema de irrigação inteligente. O processo envolveu a criação da tabela SENSORES, configuração de tipos de dados e execução de consultas SQL para apoiar a análise de umidade, pH e estado do solo, consolidando o uso de banco de dados.
+1. [Introdução](#introducao)  
+2. [Objetivo](#objetivo)  
+3. [Estrutura do Projeto](#estrutura-do-projeto)  
+4. [Passo a Passo – Importação no Oracle](#passo-a-passo-importacao)  
+5. [Carga de Dados no Oracle](#carga-de-dados)  
+6. [Consultas SQL](#consultas-sql)  
+7. [Resultados](#resultados)  
+8. [Conclusão](#conclusao)  
+9. [Licença](#licenca)
 
 ---
-## <a name="objetivo"></a>2. Objetivo
-- O objetivo desta atividade foi carregar os dados coletados pelos sensores na Fase 2 dentro de um banco de dados Oracle, realizar consultas SQL e documentar todo o processo no GitHub.
+
+## 1. Introdução <a name="introducao"></a>
+
+Esta atividade tem como objetivo importar e analisar, no **Oracle SQL Developer**, os dados coletados pelos sensores do sistema de irrigação inteligente.  
+O processo envolveu a criação da tabela **SENSORES**, configuração de tipos de dados e execução de consultas SQL para apoiar a análise de **umidade**, **pH** e **estado do solo**, consolidando o uso de banco de dados.
 
 ---
-## <a name="projeto"></a>3. Estrutura do Projeto
 
-```
+## 2. Objetivo <a name="objetivo"></a>
+
+O objetivo desta atividade foi **carregar os dados coletados pelos sensores da Fase 2** dentro de um banco de dados **Oracle**, realizar **consultas SQL** e documentar todo o processo no **GitHub**, promovendo boas práticas de versionamento e organização técnica.
+
+---
+
+## 3. Estrutura do Projeto <a name="estrutura-do-projeto"></a>
+
+```plaintext
 .
 └── projetos-faculdade
-    └── assets    
-        └── fase-3-cap-1-etapas-maquina-agricola-0.png
-        └── fase-3-cap-1-etapas-maquina-agricola-1.png
-        └── fase-3-cap-1-etapas-maquina-agricola-2.png
-        └── fase-3-cap-1-etapas-maquina-agricola-3.png
-        └── fase-3-cap-1-etapas-maquina-agricola-4.png
-        └── fase-3-cap-1-etapas-maquina-agricola-5.png
-        └── fase-3-cap-1-etapas-maquina-agricola-query-0.png
-        └── fase-3-cap-1-etapas-maquina-agricola-query-1.png
-        └── fase-3-cap-1-etapas-maquina-agricola-query-2.png
-        └── fase-3-cap-1-etapas-maquina-agricola-query-3.png
-        └── fase-3-cap-1-etapas-maquina-agricola-query-4.png
-        └── fase-3-cap-1-etapas-maquina-agricola-query-5.png
-    └── data 
-        └── Sensores_fazenda.txt    
-    └── document 
-        └── README.md
-    └── src 
-        └── consultasSQL.txt
+    ├── assets    
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-0.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-1.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-2.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-3.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-4.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-5.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-0.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-1.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-2.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-3.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-4.png
+    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-5.png
+    ├── data 
+    │   └── Sensores_fazenda.txt    
+    ├── document 
+    │   └── README.md
+    ├── src 
+    │   └── consultasSQL.txt
     └── README.md    
-
 ```
+
 ---
-## <a name="importacao"></a>4. Passo a Passo – Importação no Oracle
-- Etapa 1 – Início da Importação
 
-No Oracle SQL Developer, clique com o botão direito sobre a conexão desejada (ex:FiapDevelopment) → Selecione "Tabelas" → "Importar Dados".
+## 4. Passo a Passo – Importação no Oracle <a name="passo-a-passo-importacao"></a>
 
-Exemplo:
+### Etapa 1 – Início da Importação
+
+No **Oracle SQL Developer**, clique com o botão direito sobre a conexão desejada (ex: *FiapDevelopment*) → selecione **"Tabelas" → "Importar Dados"**.
+
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-0.png" alt="Fase 3 - Colheita de Dados e Insights - Dados valiosos e maduros" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-0.png" width="80%">
 </p>
 
-- Etapa 2 – Seleção do Arquivo
+---
 
-Escolha o arquivo de origem: data/Sensores_fazenda.txt
+### Etapa 2 – Seleção do Arquivo
 
-Origem: ../../../data
+Escolha o arquivo de origem: **data/Sensores_fazenda.txt**  
+- Origem: Arquivo Local  
+- Codificação: UTF-8  
+- Delimitador: `;`  
+- Cabeçalho: Sim
 
-Codificação: UTF-8
-
-Delimitador: ;
-
-Cabeçalho: Sim
-
-Exemplo:
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-1.png" alt="Fase 3 - Colheita de Dados e Insights - Dados valiosos e maduros" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-1.png" width="80%">
 </p>
 
+---
 
-- Etapa 3 – Configuração da Tabela
+### Etapa 3 – Configuração da Tabela
 
-Método de Importação: Inserir
+- Método de Importação: **Inserir**  
+- Nome da Tabela: **SENSORES**
 
-Nome da Tabela: SENSORES
-
-Exemplo:
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-2.png" alt="Fase 3 - Colheita de Dados e Insights - Dados valiosos e maduros" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-2.png" width="80%">
 </p>
 
-- Etapa 4 – Escolha de Colunas
+---
 
-Confirme as colunas que serão importadas (mantendo a ordem original): NPK, PH, EstadoPH, Umidade, NPK_OK, Chuva, BombaDagua
+### Etapa 4 – Escolha de Colunas
 
-Exemplo:
+Confirme as colunas que serão importadas:  
+`NPK`, `PH`, `EstadoPH`, `Umidade`, `NPK_OK`, `Chuva`, `BombaDagua`
+
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-3.png" alt="Fase 3 - Colheita de Dados e Insights - Dados valiosos e maduros" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-3.png" width="80%">
 </p>
 
+---
 
-- Etapa 5 – Definição de Tipos de Dados
-
-Ajuste os tipos de dados conforme necessário:
+### Etapa 5 – Definição de Tipos de Dados
 
 | Coluna     | Tipo de Dado | Observação        |
-| ---------- | ------------ | ----------------- |
-| NPK        | VARCHAR2(25) | valores numéricos |
-| PH         | VARCHAR2(25) | valores decimais  |
-| EstadoPH   | VARCHAR2(50) | texto             |
-| Umidade    | NUMBER(5,2)  | numérico          |
-| NPK_OK     | BOOLEAN      | verdadeiro/falso  |
-| Chuva      | VARCHAR2(10) | ON/OFF            |
-| BombaDagua | VARCHAR2(10) | ON/OFF            |
+|-------------|--------------|-------------------|
+| NPK         | VARCHAR2(25) | Valores numéricos |
+| PH          | VARCHAR2(25) | Valores decimais  |
+| EstadoPH    | VARCHAR2(50) | Texto             |
+| Umidade     | NUMBER(5,2)  | Numérico          |
+| NPK_OK      | BOOLEAN      | Verdadeiro/Falso  |
+| Chuva       | VARCHAR2(10) | ON/OFF            |
+| BombaDagua  | VARCHAR2(10) | ON/OFF            |
 
-Exemplo:
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-4.png" alt="Fase 3 - Colheita de Dados e Insights - Dados valiosos e maduros" width="80%">
-</p>
-
-
-- Etapa 6 – Conclusão da Importação
-
-Clique em Finalizar para criar a tabela e inserir os dados.
-
-Exemplo:
-<p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-4.png" alt="Fase 3 - Colheita de Dados e Insights - Dados valiosos e maduros" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-4.png" width="80%">
 </p>
 
 ---
 
-## <a name="importacao"></a>5. Carga de Dados no Oracle
+### Etapa 6 – Conclusão da Importação
 
-Após a importação, os dados da tabela SENSORES foram carregados com sucesso.
+Clique em **Finalizar** para criar a tabela e inserir os dados.
 
-Evidência de consulta:
-
-SELECT * FROM SENSORES;
-
-Tabela carregada:
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-0.png" alt="Fase 3 - Colheita de Dados e Insights - Dados valiosos e maduros" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-5.png" width="80%">
 </p>
 
-## <a name="consultas"></a>6. Consultas SQL
+---
 
-A seguir, as principais consultas realizadas no Oracle SQL Developer:
+## 5. Carga de Dados no Oracle <a name="carga-de-dados"></a>
 
-a) Contagem Total de Leituras
+Após a importação, os dados da tabela **SENSORES** foram carregados com sucesso.
 
+**Evidência de consulta:**  
+```sql
+SELECT * FROM SENSORES;
+```
+
+<p align="center">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-0.png" width="80%">
+</p>
+
+---
+
+## 6. Consultas SQL <a name="consultas-sql"></a>
+
+A seguir, as principais consultas realizadas no **Oracle SQL Developer**:
+
+### a) Conta o número total de leituras registradas na tabela.
+```sql
 SELECT COUNT(*) AS total_leituras
 FROM SENSORES;
+```
+<p align="center">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-1.png" width="80%">
+</p>
 
-b) Filtragem (WHERE)
-
-SELECT *
+### b) Seleciona NPK, PH e Umidade para registros com pH 'Neutro' e umidade > 15.0.
+```sql
+SELECT NPK, PH, Umidade
 FROM SENSORES
-WHERE EstadoPH = 'Alcalino';
+WHERE EstadoPH = 'Neutro' AND Umidade > 15.0;
+```
+<p align="center">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-2.png" width="80%">
+</p>
 
-c) Ordenação (ORDER BY)
-
-SELECT *
-FROM SENSORES
-ORDER BY Umidade DESC;
-
-d) Estatísticas Simples (AVG, MAX, MIN)
-
-SELECT 
-    AVG(Umidade) AS media_umidade,
-    MAX(Umidade) AS umidade_maxima,
-    MIN(Umidade) AS umidade_minima
+### c) Calcula a média da coluna Umidade em toda a tabela.
+```sql
+SELECT AVG(Umidade) as media_umidade
 FROM SENSORES;
+```
+<p align="center">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-3.png" width="80%">
+</p>
 
-## <a name="resultados"></a>7. Resultados
+### c) Recupera todos os registros ordenados pelo valor de PH em ordem decrescente.
+```sql
+SELECT *
+FROM SENSORES
+ORDER BY PH DESC;
+```
+<p align="center">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-4.png" width="80%">
+</p>
 
-As consultas mostraram que:
+### d) Retorna valores extremos: maior e menor PH e maior e menor Umidade.
+```sql
+SELECT 
+    MAX(PH) as ph_maximo,
+    MIN(PH) as ph_minimo,
+    MAX(Umidade) as umidade_maxima,
+    MIN(Umidade) as umidade_minima
+FROM SENSORES;
+```
+<p align="center">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-5.png" width="80%">
+</p>
 
-O total de leituras armazenadas: 87 registros
+### d) Agrupa por EstadoPH e calcula a média de PH e a contagem de leituras para cada grupo.
+```sql
+SELECT 
+    EstadoPH,
+    AVG(PH) as media_ph,
+    COUNT(*) as total_leituras
+FROM SENSORES
+GROUP BY EstadoPH;
+```
+<p align="center">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-6.png" width="80%">
+</p>
+---
 
-Os valores de umidade média e pH variam de acordo com o estado químico do solo.
+## 7. Resultados <a name="resultados"></a>
 
-O dataset representa medições de NPK, pH, umidade e status dos sensores (bomba, chuva) coletadas na Fase 2.
+As consultas mostraram que:  
+- O total de leituras armazenadas foi de **87 registros**.  
+- Os valores de **umidade média** e **pH** variam de acordo com o estado químico do solo.  
+- O dataset representa medições de **NPK**, **pH**, **umidade** e status dos sensores (**bomba** e **chuva**) coletadas na **Fase 2**.
 
-## <a name="conclusao"></a>8. Conclusão
+---
 
-O processo de importação e análise SQL foi concluído com sucesso.
+## 8. Conclusão <a name="conclusao"></a>
 
-Os dados do arquivo Sensores_fazenda.txt foram carregados no banco Oracle, permitindo realizar consultas, filtragens e estatísticas básicas para apoiar a gestão inteligente de irrigação e análise do solo.
+O processo de importação e análise SQL foi **concluído com sucesso**.  
+Os dados do arquivo **Sensores_fazenda.txt** foram carregados no banco **Oracle**, permitindo realizar consultas, filtragens e estatísticas básicas para apoiar a **gestão inteligente de irrigação** e a **análise da qualidade do solo**.
 
-## 📜 <a name="licenca"></a>8. Licença
+---
 
-Código educacional de uso livre. Adapte conforme sua necessidade acadêmica ou pessoal.
+## 9. Licença <a name="licenca"></a>
+
+📄 Código educacional de uso livre. Adapte e reutilize conforme sua necessidade acadêmica ou pessoal.

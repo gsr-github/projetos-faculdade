@@ -11,7 +11,9 @@ Curso de Inteligência Artificial – Turma IA 2/2025
 ---
 
 ## 👨‍🎓 Integrantes  
-- **Gustavo**  
+- Gustavo Redoan
+- Jorge Macedo
+- Lucca Benigno
 
 ---
 
@@ -42,8 +44,7 @@ A organização do repositório segue o padrão institucional da FIAP, com a seg
 - **`.github/`** → Contém arquivos de configuração e automação do GitHub (actions, workflows e templates).  
 - **`assets/`** → Armazena recursos visuais, como imagens, ícones, banners e vídeos de apoio.  
 - **`config/`** → Contém arquivos de configuração, variáveis de ambiente e parâmetros gerais de execução.  
-- **`document/`** → Reúne relatórios, planilhas e demais documentos institucionais.  
-  - **`other/`** → Materiais complementares e documentos auxiliares.  
+- **`document/`** → Reúne relatórios, planilhas e demais documentos institucionais.    
 - **`scripts/`** → Scripts adicionais usados para automações, deploy, migrações de banco ou backup.  
 - **`src/`** → Diretório principal de código-fonte, contendo os módulos e soluções desenvolvidas ao longo das fases do projeto.  
 - **`README.md`** → Este arquivo — guia principal do repositório, com informações gerais e instruções de uso.  
@@ -62,9 +63,13 @@ Para garantir a execução correta dos arquivos, recomenda-se instalar as seguin
 - Editor recomendado para desenvolvimento e execução do código.  
 - Download: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)  
 
-### 📊 **R (opcional)**  
+### 📊 **R**  
 - Utilizado para scripts estatísticos e análises de dados.  
 - Download: [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)  
+
+### 🧩 **Oracle SQL Developer**  
+- Utilizado para modelagem, importação de dados e execução de consultas SQL no banco de dados Oracle.  
+- Download: [https://www.oracle.com/database/sqldeveloper/technologies/download/](https://www.oracle.com/database/sqldeveloper/technologies/download/)
 
 ---
 

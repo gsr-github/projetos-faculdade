@@ -204,7 +204,7 @@ FROM SENSORES
 ORDER BY PH DESC;
 ```
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-4.png" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-6.png" width="80%">
 </p>
 
 ### d) Retorna valores extremos: maior e menor PH e maior e menor Umidade.
@@ -217,10 +217,10 @@ SELECT
 FROM SENSORES;
 ```
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-5.png" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-4.png" width="80%">
 </p>
 
-### d) Agrupa por EstadoPH e calcula a média de PH e a contagem de leituras para cada grupo.
+### e) Agrupa por EstadoPH e calcula a média de PH e a contagem de leituras para cada grupo.
 ```sql
 SELECT 
     EstadoPH,
@@ -230,7 +230,7 @@ FROM SENSORES
 GROUP BY EstadoPH;
 ```
 <p align="center">
-  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-6.png" width="80%">
+  <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-5.png" width="80%">
 </p>
 
 ---

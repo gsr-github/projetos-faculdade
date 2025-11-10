@@ -40,26 +40,38 @@ O objetivo desta atividade foi **carregar os dados coletados pelos sensores da F
 ```plaintext
 .
 └── projetos-faculdade
-    ├── assets    
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-0.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-1.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-2.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-3.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-4.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-5.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-0.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-1.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-2.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-3.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-4.png
-    │   ├── fase-3-cap-1-etapas-maquina-agricola-query-5.png
-    ├── data 
-    │   └── Sensores_fazenda.txt    
-    ├── document 
-    │   └── README.md
-    ├── src 
-    │   └── consultasSQL.txt
-    └── README.md    
+    ├── assets
+    │   └── fase-3-colheita-dados-insights
+    │       └── cap-1-etapas-maquina-agricola
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-0.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-1.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-2.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-3.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-4.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-5.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-query-0.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-query-1.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-query-2.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-query-3.png
+    │           ├── fase-3-cap-1-etapas-maquina-agricola-query-4.png
+    │           └── fase-3-cap-1-etapas-maquina-agricola-query-5.png
+    │
+    ├── data
+    │   └── fase-3-colheita-dados-insights
+    │       └── cap-1-etapas-maquina-agricola
+    │           └── Sensores_fazenda.txt
+    │
+    ├── docs
+    │   └── fase-3-colheita-dados-insights
+    │       └── cap-1-etapas-maquina-agricola
+    │           └── README.md
+    │
+    ├── src
+    │   └── fase-3-colheita-dados-insights
+    │       └── cap-1-etapas-maquina-agricola
+    │           └── consultasSQL.txt
+    │
+    └── README.md
 ```
 
 ---
@@ -222,6 +234,7 @@ GROUP BY EstadoPH;
 <p align="center">
   <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-6.png" width="80%">
 </p>
+
 ---
 
 ## 7. Resultados <a name="resultados"></a>
@@ -242,4 +255,4 @@ Os dados do arquivo **Sensores_fazenda.txt** foram carregados no banco **Oracle*
 
 ## 9. Licença <a name="licenca"></a>
 
-📄 Código educacional de uso livre. Adapte e reutilize conforme sua necessidade acadêmica ou pessoal.
+📄 Este projeto é de uso educacional e livre, podendo ser adaptado conforme as necessidades acadêmicas ou pessoais dos autores.

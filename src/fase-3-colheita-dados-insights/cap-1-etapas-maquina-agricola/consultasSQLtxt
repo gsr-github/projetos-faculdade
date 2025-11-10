@@ -1,0 +1,37 @@
+-- 1) Recupera todas as colunas e todas as linhas da tabela `SENSORES`.
+SELECT *
+FROM SENSORES;
+
+-- 2) Conta o número total de leituras registradas na tabela.
+SELECT COUNT(*) as total_leituras
+FROM SENSORES;
+
+-- 3) Seleciona NPK, PH e Umidade para registros com pH 'Neutro' e umidade > 15.0.
+SELECT NPK, PH, Umidade
+FROM SENSORES
+WHERE EstadoPH = 'Neutro' AND Umidade > 15.0;
+
+-- 4) Calcula a média da coluna Umidade em toda a tabela.
+SELECT AVG(Umidade) as media_umidade
+FROM SENSORES;
+
+-- 5) Recupera todos os registros ordenados pelo valor de PH em ordem decrescente.
+SELECT *
+FROM SENSORES
+ORDER BY PH DESC;
+
+-- 6) Retorna valores extremos: maior e menor PH e maior e menor Umidade.
+SELECT 
+    MAX(PH) as ph_maximo,
+    MIN(PH) as ph_minimo,
+    MAX(Umidade) as umidade_maxima,
+    MIN(Umidade) as umidade_minima
+FROM SENSORES;
+
+-- 7) Agrupa por EstadoPH e calcula a média de PH e a contagem de leituras para cada grupo.
+SELECT 
+    EstadoPH,
+    AVG(PH) as media_ph,
+    COUNT(*) as total_leituras
+FROM SENSORES
+GROUP BY EstadoPH;

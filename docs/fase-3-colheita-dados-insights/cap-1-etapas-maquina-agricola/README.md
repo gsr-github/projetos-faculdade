@@ -197,7 +197,7 @@ FROM SENSORES;
   <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-3.png" width="80%">
 </p>
 
-### c) Recupera todos os registros ordenados pelo valor de PH em ordem decrescente.
+### d) Recupera todos os registros ordenados pelo valor de PH em ordem decrescente.
 ```sql
 SELECT *
 FROM SENSORES
@@ -207,7 +207,7 @@ ORDER BY PH DESC;
   <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-6.png" width="80%">
 </p>
 
-### d) Retorna valores extremos: maior e menor PH e maior e menor Umidade.
+### e) Retorna valores extremos: maior e menor PH e maior e menor Umidade.
 ```sql
 SELECT 
     MAX(PH) as ph_maximo,
@@ -220,7 +220,7 @@ FROM SENSORES;
   <img src="../../../assets/fase-3-cap-1-etapas-maquina-agricola-query-4.png" width="80%">
 </p>
 
-### e) Agrupa por EstadoPH e calcula a média de PH e a contagem de leituras para cada grupo.
+### f) Agrupa por EstadoPH e calcula a média de PH e a contagem de leituras para cada grupo.
 ```sql
 SELECT 
     EstadoPH,

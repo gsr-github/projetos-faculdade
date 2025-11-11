@@ -88,8 +88,7 @@ No **Oracle SQL Developer**, clique com o botão direito sobre a conexão deseja
 
 ### Etapa 2 – Seleção do Arquivo
 
-Escolha o arquivo de origem: **data/Sensores_fazenda.txt**  
-- Origem: Arquivo Local  
+- Escolha o arquivo de origem: **./data/fase-3-colheita-dados-insights/cap-1-etapas-maquina-agricola/Sensores_fazenda.csv**  
 - Codificação: UTF-8  
 - Delimitador: `;`  
 - Cabeçalho: Sim

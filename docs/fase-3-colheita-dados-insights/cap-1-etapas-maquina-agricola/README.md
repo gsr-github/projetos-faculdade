@@ -245,8 +245,7 @@ As consultas mostraram que:
 
 ## 8. Conclusão <a name="conclusao"></a>
 
-O processo de importação e análise SQL foi **concluído com sucesso**.  
-Os dados do arquivo **Sensores_fazenda.txt** foram carregados no banco **Oracle**, permitindo realizar consultas, filtragens e estatísticas básicas para apoiar a **gestão inteligente de irrigação** e a **análise da qualidade do solo**.
+O processo de importação e análise SQL foi **concluído com sucesso**. Os dados do arquivo **Sensores_fazenda.txt** foram carregados no banco **Oracle**, permitindo realizar consultas, filtragens e estatísticas básicas para apoiar a **gestão inteligente de irrigação** e a **análise da qualidade do solo**.
 
 ---
 
